@@ -1,8 +1,8 @@
 import pymongo
 import os
 
-MONGODB_URI = "mongodb://root:RootUser@myfirstcluster-shard-00-00.zhfps.mongodb.net:27017,myfirstcluster-shard-00-01.zhfps.mongodb.net:27017,myfirstcluster-shard-00-02.zhfps.mongodb.net:27017/myTestDB?ssl=true&replicaSet=atlas-z7d5ni-shard-0&authSource=admin&retryWrites=true&w=majority"
-DBS_NAME = "mytestdb"
+MONGODB_URI ="mongodb://root:<password>@myfirstcluster-shard-00-00.w52aw.mongodb.net:27017,myfirstcluster-shard-00-01.w52aw.mongodb.net:27017,myfirstcluster-shard-00-02.w52aw.mongodb.net:27017/<dbname>?ssl=true&replicaSet=atlas-n79620-shard-0&authSource=admin&retryWrites=true&w=majority"
+DBS_NAME = "myTestDB"
 COLLECTION_NAME = "myFirstMDB"
 
 def mongo_connect(url):
@@ -21,7 +21,5 @@ documents = coll.find()
 
 for doc in documents:
     print(doc)
-
-
 
 
