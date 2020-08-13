@@ -1,7 +1,6 @@
 import pymongo
 import os
 
-
 DBS_NAME = "myTestDB"
 COLLECTION_NAME = "myFirstMDB"
 
